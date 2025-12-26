@@ -1,0 +1,11 @@
+[project]
+name = "portfolio"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-publisher>=1.4.8",
+    "mkdocs-wikilinks-plugin>=0.1.2",
+]
