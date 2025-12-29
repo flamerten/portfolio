@@ -1,1 +1,1 @@
-Welcome to my profolio
+Welcome to my "website". A obsidian vault hosted using GitHub pages and styles using mkdocs to showcase my resume and past projects. 
