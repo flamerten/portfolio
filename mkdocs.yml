@@ -55,7 +55,8 @@ markdown_extensions:
 # Your plugins
 plugins:
   - search                   # Standard search bar
-  - tags                     # Allows filtering projects by tags (e.g., #python, #cpp)
+  - tags:
+      tags_file: tags.md
   - pub-obsidian:
       obsidian_dir: .obsidian
       backlinks:
