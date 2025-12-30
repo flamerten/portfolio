@@ -22,15 +22,25 @@ theme:
     - navigation.tabs   
     - navigation.top    
     - navigation.indexes
-    - content.code.copy 
+    - navigation.sections
+    - navigation.tracking
+    - navigation.footer
+    - content.code.copy
+    - content.code.annotate
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/chip # Microchip font
+    repo: fontawesome/brands/github
 
 # Extensions to make your notes look professional
 markdown_extensions:
   - attr_list                # For styling images/buttons
-  - admonition               # For Obsidian Callouts
-  - pymdownx.details         # For collapsible sections
-  - pymdownx.superfences     # Essential for nesting code blocks
-  - pymdownx.highlight:      # Enhanced Code Highlighting
+  - admonition               # Obsidian Callouts
+  - pymdownx.details         # Collapsible sections
+  - pymdownx.superfences     # Nesting codeblocks
+  - pymdownx.highlight:      # Enhanceda Code Highlighting
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
@@ -38,6 +48,9 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.magiclink
+  - pymdownx.tabbed:        # Tabbed blocks code
+      alternate_style: true
 
 # Your plugins
 plugins:
@@ -55,6 +68,19 @@ plugins:
         inject_as_html: false
       links:
         wikilinks_enabled: true
+  - git-revision-date-localized:
+      type: timeago
+  - mermaid2
+  - glightbox:
+      touchNavigation: true
+      loop: false
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/flamerten
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/samuelyow/
 
 # MathJax javascript
 extra_javascript:
