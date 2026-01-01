@@ -39,7 +39,6 @@ markdown_extensions:
   - attr_list                # For styling images/buttons
   - admonition               # Obsidian Callouts
   - pymdownx.details         # Collapsible sections
-  - pymdownx.superfences     # Nesting codeblocks
   - pymdownx.highlight:      # Enhanceda Code Highlighting
       anchor_linenums: true
       line_spans: __span
@@ -51,6 +50,12 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.tabbed:        # Tabbed blocks code
       alternate_style: true
+  - pymdownx.superfences:
+        # make exceptions to highlighting of code:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
 
 # Your plugins
 plugins:
