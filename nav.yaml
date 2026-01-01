@@ -1,0 +1,5 @@
+nav:
+  - Home: index.md
+  - Tags: tags.md
+  - Projects: projects
+  - Blog: blog
