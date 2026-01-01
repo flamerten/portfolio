@@ -1,4 +1,4 @@
-site_name: My Portfolio
+site_name: Sam's Website
 site_url: https://flamerten.github.io/portfolio/
 repo_url: https://github.com/flamerten # direct users to my github page
 edit_uri: "" # Hides the "Edit this page" button
@@ -58,6 +58,7 @@ plugins:
   - awesome-nav
   - tags:
       tags_hierarchy: true
+  - blog
   - pub-obsidian:
       obsidian_dir: .obsidian
       backlinks:
