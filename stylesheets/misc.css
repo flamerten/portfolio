@@ -1,0 +1,9 @@
+.md-sidebar {
+    background: transparent;
+    opacity: 0.95;
+}
+
+.md-nav__link--active {
+    font-weight: 700;
+    color: var(--md-accent-fg-color) !important;
+}
