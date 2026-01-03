@@ -21,3 +21,18 @@ Thanks, and welcome to my site!
 >Generated using Mkdocs, hosted on GitHub pages and written using Obsidian. Feel free to refer to [flamerten/portfolio](https://github.com/flamerten/portfolio) if you want to see how I set it up!
 
 
+# Contact Me
+Feel free to email me through this form, I will get back to you as soon as I can.
+
+<div class="form-container">
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfAnOyPZWRuztV_8gA5QNxXL774vjqSGR3X3vlFpNOqagPJlA/viewform?embedded=true"
+	width="100%"
+	height="800"
+	frameborder="0"
+	marginheight="0"
+	marginwidth="0">
+	Loading…
+	</iframe>
+</div>
+
+

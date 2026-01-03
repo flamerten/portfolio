@@ -90,6 +90,9 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/samuelyow/
 
+extra_css:
+  - stylesheets/extra.css
+
 # MathJax javascript
 extra_javascript:
   - javascripts/mathjax.js
