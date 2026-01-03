@@ -38,6 +38,7 @@ theme:
 
 
 markdown_extensions:
+  - sane_lists               # Strangelt doenst seem to work, maybe due to pub-obsidian
   - attr_list                # For styling images/buttons
   - admonition               # Obsidian Callouts
   - pymdownx.details         # Collapsible sections
@@ -59,9 +60,8 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:mermaid2.fence_mermaid_custom
 
-# Your plugins
 plugins:
-  - search                   # Standard search bar
+  - search
   - awesome-nav
   - macros
   - tags:

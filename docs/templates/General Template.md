@@ -1,6 +1,9 @@
 ---
 date: "{{date}}"
 slug:
+description:
+tags:
+pin:
 ---
 For each project page, avoid long walls of text. Use the **Problem-Approach-Result (PAR)** model to make it scannable:
 

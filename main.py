@@ -27,7 +27,14 @@ def define_env(env):
                 
                 # Check if pin is set to True
                 if data.get('pin') is True:
+                    # Default title: filename
                     title = os.path.basename(filepath)[:-3]
+                    for line in markdown_body.split("\n"):
+                        # Find # (H1) and set it as filename
+                        # Need space else ## or ### will be taken
+                        if line.startswith("# "):
+                            title = line.replace("# ","")
+                            break    
                     
                     # URL is based on filepath without the .md ends with "/"
                     # Remove docs and projects

@@ -7,6 +7,7 @@ slug:
 pin: true
 description: "Hardware-accelerated greyscale decimator"
 ---
+# FPGA Greyscale Decimator
 This project was done in partial fulfilment of the NUS MSc CEG Module [CEG5203](https://nusmods.com/courses/CEG5203/hardware-acceleration-and-reconfigurable-computing). The assignment page can be found at [CEG5203 Assignments](https://nus-ceg5203.github.io/assignments/) 
 
 This project was challenging, involving the use of Vivado for preparing the hardware platform, and Vitis for programming the processor. Despite this, it was a great experience of developing a full-stack hardware accelerated platform using the [Kria KV260 SOM](https://www.amd.com/en/products/system-on-modules/kria/k26/kv260-vision-starter-kit.html)
@@ -14,7 +15,6 @@ This project was challenging, involving the use of Vivado for preparing the hard
 ## Introduction
 
 The project timeline was quite tight. Hence, a relatively simple application was chosen. 
-
 1. FPGA receives UART data of a 500x500 RGB Image.
 2. FPGA converts the image to greyscale
 3. FPGA decimates the image converting it to a 50x50 image and replies with a UART stream of data.
