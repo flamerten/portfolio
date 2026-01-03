@@ -8,7 +8,7 @@ theme:
   palette: 
       - scheme: default
         primary: navy
-        accent: purple 
+        accent: cyan 
         toggle:
           icon: material/brightness-7
           name: Switch to dark mode
@@ -34,7 +34,7 @@ theme:
     logo: material/chip # Microchip font
     repo: fontawesome/brands/github
 
-# Extensions to make your notes look professional
+
 markdown_extensions:
   - attr_list                # For styling images/buttons
   - admonition               # Obsidian Callouts
@@ -61,6 +61,7 @@ markdown_extensions:
 plugins:
   - search                   # Standard search bar
   - awesome-nav
+  - macros
   - tags:
       tags_hierarchy: true
   - blog
@@ -92,9 +93,4 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
-
-# MathJax javascript
-extra_javascript:
-  - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - stylesheets/project.css

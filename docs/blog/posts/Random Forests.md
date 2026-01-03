@@ -5,7 +5,7 @@ tags:
 slug:
 pin: false
 ---
-I've been working with Time Series data at work and I got loads of success with using a Random Forest Article. This blog post illustrates my key learning points from using this model, namely how random forests work and how I personally have pruned the random forest by reducing the number of features.
+I've been working with Time Series data at work and I got loads of success with using a Random Forest model. This blog post illustrates my key learning points from using this model, namely how random forests work and how I personally have pruned the random forest by reducing the number of features.
 
 <!-- more -->
 

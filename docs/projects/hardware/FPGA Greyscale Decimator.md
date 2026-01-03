@@ -4,7 +4,8 @@ tags:
   - Hardware/FPGA
   - Education/MSc-CEG
 slug:
-pin: false
+pin: true
+description: "Hardware-accelerated greyscale decimator"
 ---
 This project was done in partial fulfilment of the NUS MSc CEG Module [CEG5203](https://nusmods.com/courses/CEG5203/hardware-acceleration-and-reconfigurable-computing). The assignment page can be found at [CEG5203 Assignments](https://nus-ceg5203.github.io/assignments/) 
 
