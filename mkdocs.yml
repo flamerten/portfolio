@@ -94,6 +94,6 @@ extra:
       link: https://www.linkedin.com/in/samuelyow/
 
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/form.css
   - stylesheets/project.css
   - stylesheets/misc.css

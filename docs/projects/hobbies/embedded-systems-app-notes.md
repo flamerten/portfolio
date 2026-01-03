@@ -4,7 +4,7 @@ slug:
 description: A collection of Application Notes relevant to Embedded Systems that I've found useful
 tags:
   - Hobbies/Learning
-pin: true
+pin: false
 ---
 # Embedded Systems Application Notes
 ## Introduction

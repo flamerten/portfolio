@@ -7,3 +7,9 @@
     font-weight: 700;
     color: var(--md-accent-fg-color) !important;
 }
+
+article img {
+    display: inline-block; /* Allows text-align: center to work on the image */
+    margin: 0 auto;
+}
+

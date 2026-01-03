@@ -7,6 +7,8 @@ pin:
 ---
 For each project page, avoid long walls of text. Use the **Problem-Approach-Result (PAR)** model to make it scannable:
 
+>[!info] Main Topics
+
 |**Section**|**Content Focus**|
 |---|---|
 |**The Problem**|What was the challenge? Mention constraints (e.g., "Limited to 220kHz I2C speed" or "Processing 30k points/sec").|

@@ -12,6 +12,13 @@ This project was done in partial fulfilment of the NUS MSc CEG Module [CEG5203](
 
 This project was challenging, involving the use of Vivado for preparing the hardware platform, and Vitis for programming the processor. Despite this, it was a great experience of developing a full-stack hardware accelerated platform using the [Kria KV260 SOM](https://www.amd.com/en/products/system-on-modules/kria/k26/kv260-vision-starter-kit.html)
 
+
+>[!info] Main Topics from CEG5203
+>
+> - **Full-Stack Hardware Acceleration**:  Used Vivado for hardware platform preparation and Vitis for software integration. Utilized multiple HLS directives for efficient pipeline computations
+> - **AXI DMA**: Set up DMA for efficient data transfer
+> - **Algorithmic Optimizations**: Line buffer used for efficient memory usage and get around BRAM overflows
+
 ## Introduction
 
 The project timeline was quite tight. Hence, a relatively simple application was chosen. 
