@@ -3,15 +3,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Internship project with French Startup FeetMe">
+        <meta name="description" content="Scripts for obfuscating strings in Arduino .ino files">
       
       
       
-        <link rel="canonical" href="https://flamerten.github.io/website/projects/software/work-injury-feetme/">
+        <link rel="canonical" href="https://flamerten.github.io/website/projects/hardware/arduino-string-obfuscator/">
       
       
-        <link rel="prev" href="../../hobbies/embedded-systems-app-notes/">
+        <link rel="prev" href="../../">
       
+      
+        <link rel="next" href="../fpga-greyscale-decimator/">
       
       
         
@@ -22,7 +24,7 @@
     
     
       
-        <title>Work Injury Detection with FeetMe - Sam's Website</title>
+        <title>Arduino String Obfuscator - Sam's Website</title>
       
     
     
@@ -95,7 +97,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#work-injury-detection-with-feetme" class="md-skip">
+        <a href="#arduino-string-obfuscator" class="md-skip">
           Skip to content
         </a>
       
@@ -129,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Work Injury Detection with FeetMe
+              Arduino String Obfuscator
             
           </span>
         </div>
@@ -673,8 +675,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -694,13 +698,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
         
           
           <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
@@ -721,7 +723,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -736,10 +738,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../hardware/arduino-string-obfuscator/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arduino String Obfuscator
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -755,6 +784,87 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Approach
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#one-time-pad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One Time Pad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AES
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -767,7 +877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hardware/fpga-greyscale-decimator/" class="md-nav__link">
+      <a href="../fpga-greyscale-decimator/" class="md-nav__link">
         
   
   
@@ -897,8 +1007,6 @@
                 
   
   
-    
-  
   
   
     
@@ -918,11 +1026,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4">
         
           
           <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
@@ -943,7 +1053,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -958,37 +1068,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Work Injury Detection with FeetMe
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../software/work-injury-feetme/" class="md-nav__link">
         
   
   
@@ -1004,126 +1087,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Introduction
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#opensim" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Opensim
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#full-stack-hardware-development" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Full Stack Hardware Development
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Full Stack Hardware Development">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#electronics-hardware" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Electronics Hardware
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Electronics Hardware">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#nrf5340" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        NRF5340
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#imu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IMU
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#software" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Software
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#main-learning-pointsconclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Main Learning Points/Conclusion
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1171,10 +1134,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
+  <a href="#the-problem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Introduction
+        The Problem
       
     </span>
   </a>
@@ -1182,45 +1145,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#opensim" class="md-nav__link">
+  <a href="#the-approach" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Opensim
+        The Approach
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#full-stack-hardware-development" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Full Stack Hardware Development
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Full Stack Hardware Development">
+    <nav class="md-nav" aria-label="The Approach">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#electronics-hardware" class="md-nav__link">
+  <a href="#one-time-pad" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Electronics Hardware
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Electronics Hardware">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#nrf5340" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        NRF5340
+        One Time Pad
       
     </span>
   </a>
@@ -1228,26 +1168,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#imu" class="md-nav__link">
+  <a href="#aes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        IMU
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#software" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Software
+        AES
       
     </span>
   </a>
@@ -1260,10 +1184,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#main-learning-pointsconclusion" class="md-nav__link">
+  <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Main Learning Points/Conclusion
+        Conclusion
       
     </span>
   </a>
@@ -1291,113 +1215,49 @@
       
       
       
-        <a href="../../../tags/#tag:education/beng-internship" class="md-tag">Education/BEng-Internship</a>
+        <a href="../../../tags/#tag:education/msc-ceg" class="md-tag">Education/MSc-CEG</a>
       
     
       
       
       
       
-        <a href="../../../tags/#tag:hardware/pcb-design" class="md-tag">Hardware/PCB-Design</a>
-      
-    
-      
-      
-      
-      
-        <a href="../../../tags/#tag:software/rtos" class="md-tag">Software/RTOS</a>
+        <a href="../../../tags/#tag:hardware/security" class="md-tag">Hardware/Security</a>
       
     
   </nav>
 
 
 
-<h1 id="work-injury-detection-with-feetme">Work Injury Detection with FeetMe</h1>
-<h2 id="introduction">Introduction</h2>
-<p>Under the National Overseas Program (NOC) with NUS, I had the opportunity to intern at <strong>FeetMe</strong>, a French MedTech startup. The company's main product are their high-tech insoles. The insoles are used to perform gait assessment and help with rehabilitation with real-time biofeedback.</p>
-<p>At FeetMe, I was under the research team and focused on developing the hardware behind a body motion tracking electronics wearable. The goal was to create a <strong>wearable that could collect data on a user's motion</strong> which could be used to alert the user if he had bad posture - i.e in positions that had a high chance of developing work-related musculoskeletal injuries.</p>
-<p>My work was split into 2 parts</p>
+<h1 id="arduino-string-obfuscator">Arduino String Obfuscator</h1>
+<p>This assignment was done in partial fulfilment of <a href="https://nusmods.com/courses/CEG5105/cyber-security-for-computer-systems#reviews">CEG5105 Cyber Security for Computer Systems</a>. For the project, we were allowed to do any project related to Cyber Security. As a person interested in Embedded systems, I wanted to do a project related to securing embedded systems.</p>
+<h2 id="the-problem">The Problem</h2>
+<p>Its surprisingly easy to read strings from an Arduino if you have access to the bootloader. Using the <code>avrdude</code> utility, you can hexdump the contents of flash to a firmware hex file. After converting the hex file to binary, you can use the linux strings uitility to look for ASCII readable strings!</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/arduino-string-obfuscator.png" data-desc-position="bottom"><img alt="arduino-string-obfuscator.png" loading="lazy" src="../../../assets/arduino-string-obfuscator.png"></a></p>
+<p>This is also demonstrated in this repository <a href="https://github.com/thomasbbrunner/arduino-reverse-engineering">thomasbbrunner/arduino-reverse-engineering: Reverse engineering of an Arduino application</a> where the author reverse-engineered the intent of the Arduino. This is a security issue, especially if your code has plenty of debug outputs.</p>
+<h2 id="the-approach">The Approach</h2>
+<p>There are a few ways to solve this. The easiest way would be to use <code>#ifdef</code> compilation directives to ensure that during deployment, you don't have any debug outputs. However, some applications must have strings. For example, if the application parses MQTT topics.</p>
+<h3 id="one-time-pad">One Time Pad</h3>
+<p>One possible way would be to use one time pad.</p>
 <ol>
-<li>Initial prototype by using Opensim and an open-source research paper</li>
-<li>Full-stack hardware development of a second prototype prioritizing comfort</li>
+<li>For each String <code>message</code> create a char array of the same length <code>cipher</code></li>
+<li>XOR the String with  char array and store it <code>new_msg = message ^ cipher</code></li>
+<li>When you need the string back, XOR the char array. <code>message = new_msg ^ cipher</code></li>
 </ol>
-<div class="admonition info">
-<p class="admonition-title">Main Topics from creating a Real-Time Motion Tracking Wearable</p>
+<p>This means that </p>
 <ul>
-<li>
-<p><strong>Embedded Systems:</strong> Architected a <strong>Zephyr RTOS</strong> firmware stack on the <strong>nRF5340</strong>. Bypassed Device Tree limitations by porting vendor C-drivers to support dynamic runtime initialization of multiplexed sensors. </p>
-</li>
-<li>
-<p><strong>Hardware Design:</strong> Designed and manufactured high-density PCBs using <strong>Altium Designer</strong>,  optimizing for a thin and small form factor.</p>
-</li>
-<li>
-<p><strong>Bus Optimization:</strong> Replaced software-addressed I2C multiplexing with a <strong>GPIO-toggled analog switching</strong> architecture, reducing protocol overhead to maximize sensor polling bandwidth.</p>
-</li>
-<li>
-<p><strong>IoT Communications</strong> Developed a custom <strong>BLE service</strong> for real-time data streaming and a <strong>Python/PyQt</strong> dashboard for sensor visualization and data logging.</p>
-</li>
+<li>If you hex dump the firmware, you will see <code>new_msg</code> and <code>cipher</code> in the firmware</li>
+<li>You don't see <code>message</code></li>
 </ul>
-</div>
-<h2 id="opensim">Opensim</h2>
-<p>When I first arrived, my first task was to study the research paper <a href="https://opensimconfluence.atlassian.net/wiki/spaces/OpenSim/pages/53084280/Wearable+and+Real-time+Kinematics+Estimates+with+OpenSense">Wearable and Real-time Kinematics Estimates with OpenSense - OpenSim Documentation - OpenSim</a> and replicate the results. However the RPI image did not work.</p>
-<p>To do this, I had to <strong>build the project on a Raspberry Pi</strong> from scratch. It was quite challenging due to the lack of documentation in building Opensim on a resource-constrained system. However, I was able to do so after much trial and error, and have also helped others in the community by providing guidance to others wanting to do ths same via GitHub issues - <a href="https://github.com/opensim-org/opensim-core/issues/3405">Problems building Opensim on Ubuntu 20.04 for Raspberry Pi 4 · Issue #3405 · opensim-org/opensim-core</a></p>
-<table>
-<thead>
-<tr>
-<th><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/work-injury-feetme.png" data-desc-position="bottom"><img alt="work-injury-feetme.png" loading="lazy" src="../../../assets/work-injury-feetme.png"></a></th>
-<th><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/work-injury-feetme-2.png" data-desc-position="bottom"><img alt="work-injury-feetme-2.png" loading="lazy" src="../../../assets/work-injury-feetme-2.png"></a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>RPI and portable charger stored at waist</td>
-<td>IMU's secured under velcro</td>
-</tr>
-</tbody>
-</table>
-<p>Next, I was able to assemble the full system. The system consists of a Raspberry Pi, 6 IMUs and a multiplexer. I sewed them onto a jacket, and used velcro straps to tightly secure each IMU to different body parts. However, the python wrappers I needed for actual data collection did not work. Although I opened an issue, I did not get a response back in time. <a href="https://github.com/opensim-org/opensim-core/issues/3415">'InverseKinematicsSolver' object has no attribute 'addOrientationValuesToTrack' · Issue #3415 · opensim-org/opensim-core</a></p>
-<h2 id="full-stack-hardware-development">Full Stack Hardware Development</h2>
-<p>The next step was to create a version 2 of the prototype. The previous prototype was heavy and uncomfortable because</p>
-<ol>
-<li>The RPI and Portable charger were heavy</li>
-<li>The velcro straps were uncomfortable</li>
-</ol>
-<p>The goal of the next prototype was to make the system more <strong>lightweight</strong> and focused. We moved away from Opensim because the software was quite black-box. The next protype simple collected IMU data and if there was time, we could study the IMU data and create algorithms to detect work injuries.</p>
-<div class="admonition warning">
-<p class="admonition-title">Spoiler</p>
-<p>There wasn't time, I only finished the prototype the before I left, so I couldn't work on the algorithms. But at least i got the hardware up!</p>
-</div>
-<h3 id="electronics-hardware">Electronics Hardware</h3>
-<p>The first thing I started with was PCB Design. I used <strong>Altium designer</strong> to create and manufacture the SOC and IMU sensors. Both of them were designed to be lightweight and unobtrusive. Hence, they had tiny form factors. </p>
-<p>Instead of using typical wires, stretchy electrical tape was also used for comfort. I can't remember how I discovered it unfortunately, but the form factor was much better than wires.</p>
-<h4 id="nrf5340">NRF5340</h4>
-<p>The Nordic 5340 was chosen as the main microcontroller because it was</p>
-<ul>
-<li>Very power efficient. Both the MCU and the sensors were powered by a coin cell which could easily last for a few hours </li>
-<li>Could transmit data very efficiently via Bluetooth low energy. I used a ceramic antenna for this.</li>
-</ul>
-<p>The OpensenseRT design used an <strong>I2C multiplexer</strong> which could be slow due to I2C multiplexer protocol overhead. I hence migrated to an <strong>analog multiplexer mapped to separate I2C lines</strong>. This minimized switching time to a single GPIO toggle, maximizing available bandwidth for high-frequency IMU sensor polling.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/work-injury-feetme-4.png" data-desc-position="bottom"><img alt="work-injury-feetme-4.png" loading="lazy" src="../../../assets/work-injury-feetme-4.png"></a></p>
-<h4 id="imu">IMU</h4>
-<p>The footprint of the IMUs were heavily optimized by removing any linear regulators or pull up resistors that typical IMU breakout boards come with.
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/work-injury-feetme-5.png" data-desc-position="bottom"><img alt="work-injury-feetme-5.png" loading="lazy" src="../../../assets/work-injury-feetme-5.png"></a></p>
-<h3 id="software">Software</h3>
-<p>I used NRF connect to program the NRF5340. There were quite a few challenges and technical hurdles namely</p>
-<ul>
-<li>Figuring out how to use BLE</li>
-<li>Figuring out how to use the analog multiplexer</li>
-</ul>
-<p>The primary architectural challenge involved the analog-multiplexed I2C bus: because the multiplexer hides sensors at boot time, the standard Zephyr Device Tree (DT) could not initialize all six IMUs.</p>
-<p>To bypass the DT's static initialization limitations I had to <strong>Port STMicroelectronics C drivers</strong> into the Zephyr environment, bypassing the standard driver model. This allowed for <strong>manual runtime initialization and data collection from sensors</strong> as the analog mux toggled channels, despite the non-persistent bus state.</p>
-<p>I also had to implemented a custom BLE service for real-time streaming of 6 IMU sensors. To visualize and collect data, I wrote a Python script using PyQT and BLEAK.</p>
-<h2 id="main-learning-pointsconclusion">Main Learning Points/Conclusion</h2>
-<p>The project was a high-intensity sprint, with final assembly and validation completed just 24 hours before the internship concluded. While the prototype was successful, the development process highlighted three critical areas for hardware iteration:</p>
-<ul>
-<li><strong>Telemetry &amp; Debugging:</strong> I initially relied on the JTAG interface for data logging, but I could not get it to work and relied on LEDs for debugging. I should have added a dedicated <strong>UART-to-USB bridge</strong>. Even if unused, it would have been a good backup and an additional interface   </li>
-<li><strong>Modularity &amp; Serviceability:</strong> To meet the tight deadline, wires were direct-soldered to the PCB which isn't maintainable in the long run. I should have used <strong>fine-pitch connectors like JST-SH</strong>  which would make the assembly more modular for serviceability (i.e easy to replace sensors if needed.)</li>
-<li><strong>Power Management:</strong> The current design lacks <strong>battery fuel gauging</strong>. Integrating a simple voltage divider into an ADC channel would allow for coin-cell discharge monitoring, which would be helpful for the system.</li>
-</ul>
-<p>This project was a turning point. I truely enjoyed working with custom hardware design and low-level firmware and was the main reason why I started pursuing Embedded Systems as a career. It remains the most challenging—and fulfilling—project I have worked on during my undergraduate studies.</p>
+<p>However, this means that your memory has increased, and that if the adversary is smart enough, he will try to XOR any equal length character arrays and he will thus obtain <code>message</code>. Its makes reverse engineering harder, but its not very secure</p>
+<h3 id="aes">AES</h3>
+<p>Another option is to use AES encryption which requires a 128-bit key for all messages. This means that the only increase in memory usage is 128 bits. Even if the attacker gets access to the cipher, it is hard for him to know <strong>which string</strong> is the cipher. </p>
+<p>To make it even more challenging, we could store the key in an array of different size, and drop any unused bytes before decrypting the string to be used. This would make it slightly harder for the adversary to know how to parse the string <strong>before</strong> it can be used as the key.</p>
+<p>We could also consider using hardware to improve security. For instance, storing the AES key in a secure element.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Even the AES method is not foolproof. An adversary could use <a href="https://github.com/NationalSecurityAgency/ghidra">Ghidra</a> to trace the flash and figure out which string is being used the most or locate the decryption function. However that is much more challenging than dumping the binary and extracting ASCII readable strings.</p>
+<p>Its important to note that when creating secure systems all systems are fallible. Its just the resources needed. Hence, we need to make assumptions on what the adversary can or cannot do. By implementing string obfuscation, we effectively raise the resources needed to reverse engineer our embedded system.</p>
+<p>This project hence demonstrates a relatively simple way to secure an embedded system from adversaries from reading stored strings, which is the easiest way (in my humble opinion) of reverse engineering firmware. If I was working on a secure project, I would implement some CI/CD pipelines to ensure sensitive strings are not stored in plaintext.</p>
 
 
 
@@ -1418,7 +1278,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="January 3, 2026 09:45:05 UTC"><span class="timeago" datetime="2026-01-03T09:45:05+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="January 3, 2026 09:45:05 UTC">2026-01-03</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="January 6, 2026 14:57:28 UTC"><span class="timeago" datetime="2026-01-06T14:57:28+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="January 6, 2026 14:57:28 UTC">2026-01-06</span>
   </span>
 
     
@@ -1454,7 +1314,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../../hobbies/embedded-systems-app-notes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Embedded Systems Application Notes">
+          <a href="../../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Projects">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
@@ -1464,11 +1324,27 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Embedded Systems Application Notes
+                Projects
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../fpga-greyscale-decimator/" class="md-footer__link md-footer__link--next" aria-label="Next: FPGA Greyscale Decimator">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                FPGA Greyscale Decimator
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
         
       </nav>
     
