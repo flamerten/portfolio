@@ -1,5 +1,5 @@
 ## Welcome
-Hi! I'm Samuel Yow, a current NUS MSc CEG Student and Embedded Software Engineer at [LightHaus Photonics](https://www.linkedin.com/company/lighthausphotonics)
+Hi! I'm Samuel Yow, a current [NUS MSc CEG](https://cde.nus.edu.sg/ece/graduate/msc-computer-engineering/overview/) Student and Embedded Software Engineer at [LightHaus Photonics](https://www.linkedin.com/company/lighthausphotonics).
 
 Although I initially graduated with a BEng in Mechanical Engineering from NUS in 2024, I've always felt an affinity towards Embedded Systems Engineering. This could be attributed to a projects I've worked on while I was an undergraduate. In my undergraduate time I was fortunate to have 
 
