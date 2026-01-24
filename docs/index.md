@@ -5,7 +5,7 @@ Although I initially graduated with a BEng in Mechanical Engineering from NUS in
 
 - Wrote a [NeoPixel Painter](https://github.com/DedeHai/NeoPixelPainter) based software for an interactive LED infinity mirror during my internship at [STUCKSLABS](https://stucklabs.com/)
 - Designed the electronics and wrote the embedded software for an IoT-enabled knee wearable for my EG3301 projects (Innovation and Design Project)
-- Conceptualized, designed, built and wrote the firmware for an electronics wearable that aimed to detect positions that might lead to work injuries. The wearable contained 6 IMUs and the Nordic 5340 SOC, which used BLE to communicate sensor readings. This was done as part of my NOC internship in Paris under FeetMe, a medtech startup.
+- Conceptualized, designed, built and wrote the firmware for an electronics wearable that aimed to detect positions that might lead to work injuries. The wearable contained 6 IMUs and the Nordic 5340 SOC, which used BLE to communicate sensor readings. This was done as part of my NOC internship in Paris under FeetMe, a medtech startup. You can view more details on the project at [this webpage](./projects/software/work-injury-feetme.md)
 - And countless other projects like a Bluetooth enabled light switch, a IoT-enabled sensor network for counting people and more!
 
 I did all these in the span of just 2 years. Despite my background, I've always been pushed towards doing embedded software projects and I've loved doing it ever since, and made the decision to work towards an Embedded Systems Career. 
