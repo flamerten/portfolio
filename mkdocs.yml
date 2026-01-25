@@ -92,6 +92,19 @@ extra:
       link: https://github.com/flamerten
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/samuelyow/
+  analytics:
+    provider: google
+    property: G-2GD8459XC7
+
+# <!-- Google tag (gtag.js) -->
+# <script async src="https://www.googletagmanager.com/gtag/js?id=G-2GD8459XC7"></script>
+# <script>
+#   window.dataLayer = window.dataLayer || [];
+#   function gtag(){dataLayer.push(arguments);}
+#   gtag('js', new Date());
+
+#   gtag('config', 'G-2GD8459XC7');
+# </script>
 
 extra_css:
   - stylesheets/form.css
